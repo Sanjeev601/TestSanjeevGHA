@@ -33,5 +33,6 @@ jobs:
 
       - name: Terraform Init & Apply
         run: |
+          cd .github/workflows
           terraform init
           terraform apply -auto-approve
