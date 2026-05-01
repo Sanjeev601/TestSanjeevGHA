@@ -10,9 +10,7 @@ terraform {
 
 provider "azuread" {}
 
-# create app registration
-
-resource "azuread_application" "TestAppRegistration01" {
-  display_name = "TestAppRegistration01"
+# 2. Create the Application
+resource "azuread_application" "gh_app" {
+  display_name = "TestAppRegistration05"
 }
-
