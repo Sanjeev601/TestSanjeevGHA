@@ -24,7 +24,8 @@ jobs:
           uses: hashicorp/setup-terraform@v3 
 
         - name: Terraform Init & Apply
-          run: |
+          run: |            
+            cd .github/workflows            
             terraform init
             terraform apply -auto-approve
             
